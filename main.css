@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-css:hover {
+    box-shadow: 4px 4px 4px 4px rgba(243, 241, 241, 0.48);
+    transition: all ease 0.2s;
+}
+
+.gradient-div {
+    background: linear-gradient(
+        180deg,
+        rgba(74, 144, 245, 0.21) -34.7%,
+        rgba(125, 186, 244, 0.063) 100%,
+        rgba(125, 186, 244, 0.1295) 100%
+    );
+    border: 1px solid rgba(42, 134, 243, 0.32);
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: medium;
+    margin-top: 25px;
+}
+
+.gradient-div h5 {
+    font-weight: 600;
+}
+.gradient-div p {
+    opacity: 0.9;
+}
+.gradient-div a {
+    color: #0b72e7;
+    font-weight: 600;
+}
+
+.shadow-2:hover {
+    box-shadow: 4px 4px 4px 4px rgba(30, 31, 44, 0.48);
+}
+
+.CompaniesList {
+    animation: 5s infinite linear moveCompany;
+}
+@keyframes moveCompany {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: -300px;
+    }
+}
+
+@media (min-width: 960px) {
+    .gradient-div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
